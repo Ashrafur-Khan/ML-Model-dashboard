@@ -1,1 +1,16 @@
-<p>evaluation-page works!</p>
+<p-card header="Model Evaluation Metrics">
+    <p-table [value]="metrics">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Metric</th>
+          <th>Value</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-metric>
+        <tr>
+          <td>{{ metric.name }}</td>
+          <td>{{ metric.value }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+</p-card>

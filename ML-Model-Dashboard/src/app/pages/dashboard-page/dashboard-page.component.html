@@ -1,1 +1,14 @@
-<p>dashboard-page works!</p>
+<div class="grid">
+    <div class="col-12 md:col-6">
+      <p-card header="Recent Experiments">
+        <p>View past model training sessions.</p>
+        <button pButton label="View Models" routerLink="/evaluate"></button>
+      </p-card>
+    </div>
+    <div class="col-12 md:col-6">
+      <p-card header="Quick Actions">
+        <p>Start a new model training session.</p>
+        <button pButton label="Upload Data" routerLink="/upload"></button>
+      </p-card>
+    </div>
+</div>

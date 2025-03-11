@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  app-sidebar-nav {
+    width: 250px;
+    background: #f8f9fa;
+    padding: 10px;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow: auto;
+  }
+  
